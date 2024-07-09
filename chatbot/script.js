@@ -16,11 +16,11 @@ document.getElementById('send-btn').addEventListener('click', async () => {
             });
 
             if (!response.ok) {
-                throw new Error(`Error converting code: ${response.statusText}`);
+                throw new Error(`Error generating response: ${response.statusText}`);
             }
 
             const data = await response.json();
-            displayResponse(data.text, "received");
+            displayResponse(data.responseMsg, "received");
         } catch (error) {
             console.error(error);
             displayResponse('An error occurred while processing your request', "error");
