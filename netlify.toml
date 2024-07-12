@@ -1,6 +1,6 @@
 [build]
   functions = "functions"
-  publish = "chatbot"
+  publish = "public"
 
 [[headers]]
   for = "/*"
@@ -13,3 +13,15 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+
+
+[[redirects]]
+  from = "/chatbot/*"
+  to = "/chatbot/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/translate/*"
+  to = "/translate/:splat"
+  status = 200
+

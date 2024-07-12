@@ -46,24 +46,26 @@ main {
     display: flex;
     justify-content: space-between;
     height: 400px; /* Adjust height as needed */
-    
 }
 
-.translator-input, .translator-output {
+.input-container {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin: 10px; /* Adjust the margin to create space */
+    justify-content: space-between;
 }
 
-.translator-input {
-    margin-right: 15px; /* Add margin-right for input area */
+.input-container .language-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
+.input-container .language-input label {
+    margin-right: 10px;
+}
 
-
-
-.translator-input textarea, .translator-output textarea {
+.input-container textarea, .output-container textarea {
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -75,6 +77,10 @@ main {
     overflow-y: auto; /* Enable vertical scrolling */
 }
 
+.output-container {
+    flex: 1;
+    margin-left: 20px; /* Add margin-left for output area */
+}
 
 .controls-container {
     display: flex;
