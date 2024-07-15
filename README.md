@@ -15,3 +15,11 @@
 
 - [AI-Fusion](https://aifusion.netlify.app/)
 
+## Drawbacks
+
+- Since the application uses free API services, the results are not that efficient.
+
+- The language translation is working fast for well known langauges but for less known languages it is taking time.
+
+- The results of chabot are not arranged in a proper way. So the result looks unstructured.
+
