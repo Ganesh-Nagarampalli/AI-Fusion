@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const originalLanguage = document.getElementById('original-language').value;
         const targetLanguage = document.getElementById('target-language').value;
         const prompt = `Do not give any extra text just give translated text, Translate text from ${originalLanguage} to ${targetLanguage}: ${text}`;
-        console.log(prompt);
 
         try {
             const response = await fetch('/.netlify/functions/translate', {
