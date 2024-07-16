@@ -98,15 +98,17 @@ main {
     overflow-y: auto; /* Enable vertical scrolling */
 }
 
+/* Adjust the size of the image preview */
 .image-preview {
-    margin-top: 20px;
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .image-preview img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ensure image fits within container */
+    max-height: 100%; /* Ensure image fits within container */
 }
+
 
 footer {
     background-color: #333;

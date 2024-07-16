@@ -25,3 +25,8 @@
   to = "/translate/:splat"
   status = 200
 
+[[redirects]]
+  from = "/image-descriptor/*"
+  to = "/image-descriptor/:splat"
+  status = 200
+
