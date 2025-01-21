@@ -24,10 +24,9 @@ header p {
 }
 
 main {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Creates 3 equal columns */
+    gap: 20px;  /* Adds space between items */
     padding: 20px;
 }
 
@@ -37,9 +36,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    margin: 20px;
     flex: 1;
-    max-width: 300px;
     transition: transform 0.3s ease;
 }
 
